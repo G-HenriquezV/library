@@ -1,0 +1,43 @@
+{
+  "b1": {
+    "title": "Calculus: Early Transcendentals",
+    "authors": [
+      "James Stewart"
+    ],
+    "edition": "8th Edition",
+    "language": "English",
+    "isbn10": "1285741552",
+    "isbn13": "978-1285741550",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null
+  },
+  "b2": {
+    "title": "Fenómenos de Transporte",
+    "authors": [
+      "R. Byron Bird",
+      "Warrent E. Stewart",
+      "Edwin N. Lightfoot"
+    ],
+    "edition": "Segunda Edición",
+    "language": "Spanish",
+    "isbn10": "9681863658",
+    "isbn13": "978-9681863654",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null
+  },
+  "b3": {
+    "title": "Introduction to the Thermodynamics of Materials",
+    "authors": [
+      "David R. Gaskell"
+    ],
+    "edition": "5th Edition",
+    "language": "English",
+    "isbn10": "1591690439",
+    "isbn13": "978-1439851500",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null
+  }
+}
