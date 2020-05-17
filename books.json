@@ -1,43 +1,147 @@
 {
-  "b1": {
-    "title": "Calculus: Early Transcendentals",
-    "authors": [
-      "James Stewart"
-    ],
-    "edition": "8th Edition",
-    "language": "English",
-    "isbn10": "1285741552",
-    "isbn13": "978-1285741550",
+  "c08b5e50-7279-4633-adf5-3a6876352cd7": {
+    "title": "Thermodynamics: An Engineering Approach",
+    "author": "Michael Boles, Yunus Cengel",
     "is_lent": false,
     "current_user": null,
-    "return_date": null
+    "return_date": null,
+    "year": 2018,
+    "edition": "9th Edition",
+    "isbn": "1260092682"
   },
-  "b2": {
-    "title": "Fenómenos de Transporte",
-    "authors": [
-      "R. Byron Bird",
-      "Warrent E. Stewart",
-      "Edwin N. Lightfoot"
-    ],
-    "edition": "Segunda Edición",
-    "language": "Spanish",
-    "isbn10": "9681863658",
-    "isbn13": "978-9681863654",
-    "is_lent": false,
-    "current_user": null,
-    "return_date": null
-  },
-  "b3": {
+  "2b567ed2-4f7f-4a6c-83f4-2d0f154eb550": {
     "title": "Introduction to the Thermodynamics of Materials",
-    "authors": [
-      "David R. Gaskell"
-    ],
-    "edition": "5th Edition",
-    "language": "English",
-    "isbn10": "1591690439",
-    "isbn13": "978-1439851500",
+    "author": "David R. Gaskell",
     "is_lent": false,
     "current_user": null,
-    "return_date": null
+    "return_date": null,
+    "year": 2008,
+    "edition": "5th Edition",
+    "isbn": "1591690439"
+  },
+  "722b8e4d-b9d8-46da-a864-f6fa638b84fb": {
+    "title": "Calculus: Early Transcendentals",
+    "author": "James Stewart",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2015,
+    "edition": "8th Edition",
+    "isbn": "9681863658"
+  },
+  "5a42a4e4-c45a-4bcc-94dc-88a4b746bf3e": {
+    "title": "Fenómenos de Transporte",
+    "author": "R. Byron Bird, Warren E. Stewart, Edwin N. Lightfoot",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2007,
+    "edition": "Segunda edición",
+    "isbn": "9681863658"
+  },
+  "377b9dc2-2d81-4dce-ada8-3067167e99fc": {
+    "title": "Vector Calculus",
+    "author": "Jerrold E. Marsden, Anthony Tromba",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2011,
+    "edition": "Sixth edition",
+    "isbn": "1429215089"
+  },
+  "a3feb3bb-564d-4536-8cfa-d3a33080d8da": {
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 1865,
+    "edition": "The Classics (May 14, 2020)",
+    "isbn": "1731421346"
+  },
+  "42073091-3454-42dd-82c9-e858495a5b40": {
+    "title": "1984",
+    "author": "George Orwell",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 1949,
+    "edition": "Houghton Mifflin Harcourt (April 4, 2017)",
+    "isbn": "1328869334"
+  },
+  "8fdd6d1d-e579-4f01-94b9-b30d00228284": {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 1932
+  },
+  "8788961a-81c1-48ce-ac90-850c244255cc": {
+    "title": "Clinical Psychology: Science, Practice, and Diversity",
+    "author": "Andrew M. Pomerantz",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2019,
+    "edition": "5 edition",
+    "isbn": "1544333617"
+  },
+  "92ec7c38-2667-435d-b209-114803596820": {
+    "title": "Chemometrics: Data Analysis for the Laboratory and Chemical Plant",
+    "author": "Richard G. Brereton",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2010,
+    "edition": "1 edition",
+    "isbn": "0471489778"
+  },
+  "46c18874-014f-4af1-b1d0-677b4de035e7": {
+    "title": "Human Anatomy",
+    "author": "Frederic H. Martini, Robert B. Tallitsch, Judi L. Nath",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2017,
+    "edition": "9 edition",
+    "isbn": "013432076X"
+  },
+  "ba27328f-a2e1-46a1-a17e-1f164e82538c": {
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupery",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 1943
+  },
+  "536e5216-5d70-4119-bf56-c300b76f908a": {
+    "title": "Tratado de Fisiología Médica",
+    "author": "Arthur Guyton, John E. Hall",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2010,
+    "edition": "Decimotercera edición",
+    "isbn": "9788491130246"
+  },
+  "4439d286-72a8-438f-8483-d39c695ef8c5": {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2009,
+    "isbn": "0307474275"
+  },
+  "0e343396-ec7e-46a4-86bc-107e5b940863": {
+    "title": "Principles of Microeconomics",
+    "author": "N. Gregory Mankiw",
+    "is_lent": false,
+    "current_user": null,
+    "return_date": null,
+    "year": 2017,
+    "edition": "8th edition",
+    "isbn": "1305971493"
   }
 }
