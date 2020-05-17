@@ -173,7 +173,7 @@ class Library:
         book.return_date = return_date
         book.current_user = person
 
-    def set_book_as_returned(self, book: Book) -> None:
+    def return_book(self, book: Book) -> None:
         """
         Sets the book as returned.
 
