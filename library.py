@@ -145,7 +145,7 @@ class Library:
         :param book: Book-type object to add
         """
         if book in self.books.values():
-            raise Exception('Book already registered in the library')
+            raise KeyError('Book already registered in the library')
         self.books.update({book.bid: book})
 
     def delete_book(self, book: Book, no_warn: bool = False) -> None:
@@ -153,10 +153,10 @@ class Library:
         Deletes book from the library.
 
         :param book: Book to delete
-        :param no_warn: If exception should be raised if the book doesn't exist
+        :param no_warn: If KeyError exception should be raised if the book doesn't exist
         """
         if book not in self.books.values() and not no_warn:
-            raise Exception('Book is not registered in the library')
+            raise KeyError('Book is not registered in the library')
         self.books.pop(book.bid)
 
     def lend_book(self, book: Book, return_date: datetime, person: str) -> None:
@@ -168,7 +168,7 @@ class Library:
         :param person: Name of the person
         """
         if book not in self.books.values() or book.is_lent:
-            raise Exception('Book not lent or not registered in the library')
+            raise KeyError('Book not lent or not registered in the library')
         book.is_lent = True
         book.return_date = return_date
         book.current_user = person
@@ -180,7 +180,7 @@ class Library:
         :param book: Book to flag as returned
         """
         if book not in self.books.values() or not book.is_lent:
-            raise Exception('Book available to lent or not registered in the library')
+            raise KeyError('Book available to lent or not registered in the library')
         book.is_lent = False
         book.current_user = None
         book.return_date = None
