@@ -189,19 +189,23 @@ class Library:
         """
         Prints every book in the library and its current status.
         """
-        print(f'{"Book title":70} {"Author(s)":60} {"Availability":38}')
-        print('-' * 168)
+        title_len = max(len(book.title) for book in self.books.values())
+        author_len = max(len(book.author) for book in self.books.values())
+        print(f'{"Book title":{title_len + 1}} {"Author(s)":{author_len + 1}} {"Availability":38}')
+        print('-' * (title_len + author_len + 40))
         for book in self.books.values():
             if book.is_lent:
-                print(f'{book.title:70} {book.author:60} Returns on {book.return_date.strftime("%A %B %d %Y"):38}')
+                print(f'{book.title:{title_len + 1}} {book.author:{author_len + 1}} Returns on'
+                      f' {book.return_date.strftime("%A %B %d %Y"):38}')
             else:
-                print(f'{book.title:70} {book.author:60} {"Available":38}')
+                print(f'{book.title:{title_len + 1}} {book.author:{author_len + 1}} {"Available":38}')
 
     def print_book_bid(self) -> None:
         """
         Prints every book BID
         """
-        print(f'{"Book title":80} {"bid":38}')
-        print('-' * 117)
+        title_len = max(len(book.title) for book in self.books.values())
+        print(f'{"Book title":{title_len + 2}} {"bid":36}')
+        print('-' * (title_len + 38))
         for book in self.books.values():
-            print(f'{book.title:80} {book.bid:36}')
+            print(f'{book.title:{title_len + 2}} {book.bid:36}')
