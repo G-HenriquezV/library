@@ -189,8 +189,19 @@ class Library:
         """
         Prints every book in the library and its current status.
         """
+        print(f'{"Book title":70} {"Author(s)":60} {"Availability":38}')
+        print('-' * 168)
         for book in self.books.values():
             if book.is_lent:
-                print(f'{book}. Returns on {book.return_date.strftime("%A %B %d %Y")}')
+                print(f'{book.title:70} {book.author:60} Returns on {book.return_date.strftime("%A %B %d %Y"):38}')
             else:
-                print(f'{book}. Currently available')
+                print(f'{book.title:70} {book.author:60} {"Available":38}')
+
+    def print_book_bid(self) -> None:
+        """
+        Prints every book BID
+        """
+        print(f'{"Book title":80} {"bid":38}')
+        print('-' * 117)
+        for book in self.books.values():
+            print(f'{book.title:80} {book.bid:36}')
