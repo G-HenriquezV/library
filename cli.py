@@ -64,18 +64,18 @@ def show_workinglib() -> None:
 @click.argument('title')
 @click.argument('author')
 @click.pass_context
-def add_book(ctx, title, author) -> None:
+def add_book(ctx: click.Context, title: str, author: str) -> None:
     """
-    Adds a book to the library. Additional arguments can be added as an option
+    Adds a book to the library. Additional arguments can be added.
     \b
-    Example: add-book "Fahrenheit 491" "Ray Bradbury" --year 1953
+    Example: add-book "Fahrenheit 491" "Ray Bradbury" -year 1953
 
     \b
     :param title: Title of the book
     :param author: Author of the book
     :param ctx: Context of the click command line
     """
-    kwargs = {ctx.args[i][2:]: ctx.args[i + 1] for i in range(0, len(ctx.args), 2)}
+    kwargs = {ctx.args[i][1:]: ctx.args[i + 1] for i in range(0, len(ctx.args), 2)}
     _book = Book(title, author, **kwargs)
     with Library(get_workinglib()) as library:
         library.add_book(_book)
