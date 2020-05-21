@@ -36,9 +36,8 @@ class Book:
     def __repr__(self):
         return f"Book(<'{self.title}', '{self.author}', '{self.bid}'>)"
 
-    # Should I really be using a static method?
-    @staticmethod
-    def from_dict(book_dict: dict, bid: str = None) -> 'Book':
+    @classmethod
+    def from_dict(cls, book_dict: dict, bid: str = None) -> 'Book':
         """
         Creates a Book type object using a dictionary
 
@@ -47,7 +46,7 @@ class Book:
         :param bid: Optional. Book unique ID.
         :return: Book type object with the dictionary data on it
         """
-        _book = Book(book_dict['title'], book_dict['author'], bid)
+        _book = cls(book_dict['title'], book_dict['author'], bid)
         for key, value in book_dict.items():
             if key in ['title', 'author']:
                 continue
